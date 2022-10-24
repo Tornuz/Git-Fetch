@@ -1,38 +1,117 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 20cm;
+  height: 25cm;
+  background-color: #2C3E50;
+  border:solid #992B02;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover{
+  border:solid #F16051;
+}
+@media  screen and (max-width: 600px) {
+  .card {
+      width: 30cm;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+body {
+  background-image: url('../public/WallpaperDog-5447220.jpg');
+}
+
+#main-div {
+  margin-left: 24%;
+  margin-top: 2%;
+  font-family: 'Roboto Slab', serif;
+}
+
+#title {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 5em;
+  text-align: center;
+  color: #F16051;
+  margin-bottom: 1cm;
+  text-decoration-line: underline;
+  text-decoration-color:#F16060 ;
+  text-decoration-style: double;
+}
+
+#input {
+  border-bottom-color: #F16051;
+  font-size: 2em;
+  color: #F16060;
+}
+
+.btn-large:hover {
+  background-color: #F16060
+}
+
+.btn-large, .btn-large:after {
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  margin-left: 7cm;
+  background-color: #F16051;
+}
+
+#other {
+  margin-left: 6cm;
+  font-size: 2em;
+  color: #F16060;
+  font-family: 'Abel', sans-serif;
+
+}
+
+#img {
+  width: 160px;
+  height: 160px;
+  margin-left: 7cm;
+}
+#span1{
+  margin-left: 3cm;
+  margin-top: 1cm;
+}
+#span1, #img {
+  font-size: 1.5em;
+  display: inline-block;
+  color: #F16060;
+}
+
+#span4 {
+  margin-left: 7.7cm;
+  margin-bottom: 1cm;
+  margin-top: 2cm;
+  font-size: 1.5em;
+  line-height: 2cm;
+  color: #F16060;
+}
+
+#span2 {
+  color: #F16060;
+  margin-left: 5cm;
+  margin-bottom: 1cm;
+  margin-top: 2cm;
+  font-size: 1.5em;
+  line-height: 2cm;
+}
+
+#span3, #span5, #span6 {
+  margin-left: 1cm;
+  margin-bottom: 1cm;
+  margin-top: 2cm;
+  font-size: 1.5em;
+  line-height: 2cm;
+  color: #F16060;
+}
+@media screen and (max-width: 992px) {
+  .row {
+      width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+      width: 100%;
   }
 }
